@@ -1,0 +1,36 @@
+.box {
+	/* background: #9E9E9E; */
+	border: black 1px solid;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 0;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+}
+
+.row {
+	display: block;
+	float:left;
+	width:100%;
+}
+
+img{
+	width: 100px;
+	height: 100px;
+}
+
+#player1_dashboard{
+	height: 200px;
+	width: 40%;
+	border: 1px solid black;
+	display: inline-block;
+}
+#player2_dashboard{
+	height: 200px;
+	width: 40%;
+	border: 1px solid black;
+	display: inline-block;
+	float: right;
+}
