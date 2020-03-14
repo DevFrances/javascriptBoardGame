@@ -23,13 +23,15 @@ let images = [
 
 function start() {
   for (let i = 0; i < 9; i++) {
-    let row = document.createElement('div');
-    row.className = "row";
+    //let row = document.createElement('div');//if you understand html, you dont need javascript to do this;
+    let row = '<div class='row'>';
     for (let j = 0; j < 9; j++) {
-        let box = document.createElement('div');
-        box.className = "box";
-        row.appendChild(box);
-    }                
+        row += '<div class='box'></div>';
+    }   
+    row += '</div>';
+    //generating your html this way gives you so much power to do a lot of dynamic stuff - this in effect opens up the way for you to understand how angualr or react works!
+    //Just felt I should share cause I have won a lot of 'wars' doing it this way!
+    //Just my personal taste though!!!
     document.getElementById('boxParent').appendChild(row);
  }
  let elements = document.getElementsByClassName('box')
